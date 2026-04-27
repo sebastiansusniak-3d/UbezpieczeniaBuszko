@@ -594,19 +594,9 @@ article h2 {
 .nav-menu a:hover {
     color: #e0e6f0;
 }
-.nav-menu {
-    display: flex;
-    gap: 20px;
-}
 .nav-menu li {
     list-style: none;
 }
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .logo {
     text-align: center;
 }
