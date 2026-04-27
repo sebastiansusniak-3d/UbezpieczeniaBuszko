@@ -89,7 +89,11 @@ ul {
     opacity: 0.9;
     border-bottom-color: var(--accent-orange);
 }
-
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
 /* Hamburger Menu */
 .hamburger {
     display: none;
