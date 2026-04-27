@@ -1,2 +1,2 @@
-# UbezpieczeniaByszko
+# UbezpieczeniaBuszko
 Ubezpieczenia zdrowotne i inne
