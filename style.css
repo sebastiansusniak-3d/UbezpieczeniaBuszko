@@ -590,7 +590,13 @@ article h2 {
     text-align: center;
 }
 
+.header-photo {
+    flex-shrink: 0;
+}
+
 .header-photo img {
     height: 80px;
-    border-radius: 10px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
 }
