@@ -8,244 +8,19 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     
-    <style>
-        /* --- STYLE NAGŁÓWKA (Logo + Dane) - STAŁE --- */
-        .navbar .logo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            text-align: center;
-        }
-
-        .header-logo {
-            height: 90px;
-            width: auto;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .navbar .logo h1 {
-            margin: 0;
-            font-size: 1.3rem;
-            line-height: 1.4;
-            font-weight: 700;
-            color: #333333; /* Czarny kolor tekstu */
-        }
-
-        .navbar .logo h1 span {
-            display: block;
-            font-weight: 400;
-            font-size: 0.9em;
-            color: #555555;
-            margin-top: 4px;
-        }
-
-        @media (max-width: 768px) {
-            .header-logo { height: 70px; }
-            .navbar .logo h1 { font-size: 1.1rem; }
-        }
-
-        /* --- STYLE DLA STRONY OFERTA --- */
-
-        /* Hero Section */
-        .page-hero {
-            background: linear-gradient(135deg, #f0f4f8 0%, #ffffff 100%);
-            padding: 60px 20px;
-            text-align: center;
-        }
-        .page-hero h1 {
-            color: #005eb8;
-            font-size: 2.2rem;
-            margin-bottom: 15px;
-        }
-        .page-hero p {
-            font-size: 1.2rem;
-            color: #555;
-            margin-bottom: 30px;
-        }
-        .agent-contact {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 12px 25px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-        .cta-button.primary {
-            background-color: #005eb8;
-            color: white;
-        }
-        .cta-button.primary:hover {
-            background-color: #004494;
-        }
-        .cta-button.secondary {
-            background-color: white;
-            color: #005eb8;
-            border: 2px solid #005eb8;
-        }
-        .cta-button.secondary:hover {
-            background-color: #f0f7ff;
-        }
-        .cta-button.large {
-            padding: 15px 35px;
-            font-size: 1.1rem;
-        }
-
-        /* Kalkulator */
-        .insurance-calculator {
-            padding: 60px 20px;
-            background: #fff;
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .insurance-calculator h2 {
-            color: #333;
-            margin-bottom: 30px;
-        }
-        .calc-form {
-            background: #f9f9f9;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .form-row {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 25px;
-            flex-wrap: wrap;
-        }
-        .form-group {
-            flex: 1;
-            min-width: 200px;
-            text-align: left;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            color: #444;
-        }
-        .form-group select {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-            background: #fff;
-        }
-        .calc-result {
-            margin-top: 20px;
-            font-weight: bold;
-            color: #005eb8;
-            min-height: 24px;
-        }
-
-        /* Tabela Porównawcza */
-        .policies-grid {
-            padding: 60px 20px;
-            background: #f4f6f9;
-        }
-        .policies-grid h2 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 40px;
-        }
-        .policies-table {
-            overflow-x: auto;
-            max-width: 1000px;
-            margin: 0 auto;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            min-width: 600px;
-        }
-        thead {
-            background: #005eb8;
-            color: #fff;
-        }
-        th, td {
-            padding: 15px;
-            text-align: center;
-            border-bottom: 1px solid #eee;
-        }
-        th {
-            font-weight: 600;
-            font-size: 1.05rem;
-        }
-        tbody tr:nth-child(even) {
-            background: #f9fbfd;
-        }
-        tbody tr:hover {
-            background: #eef4fa;
-        }
-        tbody tr:last-child td {
-            border-bottom: none;
-        }
-        /* Stylizacja pierwszej kolumny (Typ polisy) */
-        td:first-child {
-            text-align: left;
-            font-weight: bold;
-            color: #333;
-            padding-left: 25px;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            text-align: center;
-            padding: 60px 20px;
-            background: #fff;
-        }
-        .cta-section h2 {
-            color: #333;
-            margin-bottom: 15px;
-        }
-        .cta-section p {
-            font-size: 1.1rem;
-            color: #555;
-            margin-bottom: 30px;
-        }
-
-        /* Footer placeholder */
-        .footer {
-            background: #333;
-            color: #fff;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .agent-info a { color: #fff; }
-    </style>
+    
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
-    <!-- LEWA: MENU -->
+
     <ul class="nav-menu">
         <li><a href="index.html">Strona główna</a></li>
         <li><a href="oferta.html">Oferta</a></li>
         <li><a href="o-mnie.html">O mnie</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
     </ul>
-    <!-- ŚRODEK -->
+
     <div class="logo">
         <img src="logo-uniqa.png" class="header-logo">
         <h1>
@@ -253,11 +28,11 @@
             <span>Agent Ubezpieczeniowy</span>
         </h1>
     </div>
-    <!-- PRAWA -->
+
     <div class="header-photo">
         <img src="agent.jpg">
     </div>
-    <div class="hamburger"><span></span><span></span><span></span></div>
+
 </nav>
     </header>
 
