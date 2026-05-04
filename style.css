@@ -695,3 +695,17 @@ img {
     color: #fff;
     border-color: var(--uniqa-blue);
 }
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;   /* 🔥 blokuje łamanie */
+}
+
+.nav-menu a {
+    white-space: nowrap; /* 🔥 tekst w jednej linii */
+}
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
