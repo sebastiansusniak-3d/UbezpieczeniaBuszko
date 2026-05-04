@@ -623,6 +623,10 @@ img {
     margin: 20px auto;
     border-radius: 10px;
 }
+/* =========================================
+   9. CUSTOM (Twoje zmiany)
+   ========================================= */
+
 /* HERO z obrazkiem */
 .hero {
     background: url('index.png') no-repeat right center;
