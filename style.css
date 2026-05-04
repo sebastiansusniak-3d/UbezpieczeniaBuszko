@@ -132,7 +132,7 @@ ul {
    3. Hero Section (Strona Główna)
    ========================================= */
 /* Używamy klasy .hero tylko na index.html, .page-hero na podstronach */
-.hero, .page-hero {
+.page-hero {
     background: linear-gradient(135deg, var(--uniqa-blue) 0%, #0045c2 100%);
     color: var(--white);
     padding: 5rem 20px;
