@@ -657,8 +657,10 @@ img {
 .hero {
     background: url('index.png') no-repeat right center;
     background-size: cover;
-    color: #003087; /* zamiast white */
-    padding: 120px 20px;
-    text-align: left;
-    padding-top: 160px;  /* żeby header nie nachodził na tekst */
+
+    min-height: 360px;   /* 🔥 było za duże */
+    padding: 100px 20px 60px; /* 🔥 mniej na dole */
+
+    display: flex;
+    align-items: center;
 }
