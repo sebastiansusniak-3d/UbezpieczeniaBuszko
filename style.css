@@ -657,7 +657,7 @@ img {
 .hero {
     background: url('index.png') no-repeat right center;
     background-size: cover;
-    color: white;
+    color: #003087; /* zamiast white */
     padding: 120px 20px;
     text-align: left;
     padding-top: 160px;  /* żeby header nie nachodził na tekst */
