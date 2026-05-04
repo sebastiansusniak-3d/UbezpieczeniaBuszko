@@ -654,3 +654,10 @@ img {
     font-size: 1.2rem;
     color: #333;
 }
+.hero {
+    background: url('index.png') no-repeat right center;
+    background-size: cover;
+    color: white;
+    padding: 120px 20px;
+    text-align: left;
+}
