@@ -664,3 +664,34 @@ img {
     display: flex;
     align-items: center;
 }
+/* Kategorie (globalnie dla wszystkich stron) */
+.blog-categories {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f4f6f9;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.category-btn {
+    padding: 12px 25px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+    background: var(--uniqa-blue);
+    color: #fff;
+    border-color: var(--uniqa-blue);
+}
