@@ -268,7 +268,7 @@
                 <p>Indywidualne polisy dopasowane do Twoich potrzeb</p>  
             </div>  
         </section>  
-/**Po Kalkulatorze pusto ++ Kategorie **/
+/* Po Kalkulatorze pusto ++ Kategorie */
         <section class="blog-categories">
             <h2>Kategorie</h2>
             <div class="categories">
@@ -341,25 +341,8 @@
                 &copy; 2026 Iwona Buszko-Byszewska. Wszystkie prawa zastrzeżone.
             </div>
         </div>
-    </footer>  
+    </footer>  ,
 
     <script src="script.js"></script>
-    <!-- Prosty skrypt symulujący działanie kalkulatora -->
-    <script>
-        document.getElementById('ocCalculator').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const engineFactor = parseFloat(document.getElementById('engine').value);
-            const mileageFactor = parseFloat(document.getElementById('mileage').value);
-            
-            // Bazowa składka (przykładowa)
-            const basePrice = 450; 
-            
-            const estimatedPrice = Math.round(basePrice * engineFactor * mileageFactor);
-            
-            const resultDiv = document.getElementById('calc-result');
-            resultDiv.innerHTML = `Szacowana składka OC: <strong>${estimatedPrice} zł</strong><br><small>*To jest wycena orientacyjna. Zadzwoń po dokładną ofertę!</small>`;
-            resultDiv.style.color = "#005eb8";
-        });
-    </script>
 </body>
 </html>
