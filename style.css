@@ -623,3 +623,30 @@ img {
     margin: 20px auto;
     border-radius: 10px;
 }
+/* HERO z obrazkiem */
+.hero {
+    background: url('index.png') no-repeat right center;
+    background-size: cover;
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+}
+
+/* tekst przesunięty w lewo */
+.hero-content {
+    max-width: 600px;
+    margin-left: 40px;
+    text-align: left;
+}
+
+/* lepsza czytelność */
+.hero h2 {
+    font-size: 2.8rem;
+    color: #1a1a1a;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #333;
+}
