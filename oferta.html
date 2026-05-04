@@ -238,69 +238,47 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <div class="logo">
-                <!-- 1. NA GÓRZE: POWIĘKSZONE LOGO -->
-                <img src="logo-uniqa.png" alt="Logo Uniqa" class="header-logo" onerror="this.src='logo-uniqa.jpg'; this.onerror=null;">
-                
-                <!-- 2. POD LOGO: DANE (Czarne litery, bez słowa UNIQA w tekście) -->
-                <h1>
-                    Iwona Buszko-Byszewska
-                    <span>Agent Ubezpieczeniowy</span>
-                </h1>
-            </div>
-
-            <ul class="nav-menu">
-                <li><a href="index.html">Strona główna</a></li>
-                <li><a href="oferta.html">Oferta</a></li>
-                <li><a href="o-mnie.html">O mnie</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-            <div class="hamburger"><span></span><span></span><span></span></div>
-        </nav>
+    <!-- LEWA: MENU -->
+    <ul class="nav-menu">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="oferta.html">Oferta</a></li>
+        <li><a href="o-mnie.html">O mnie</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <!-- ŚRODEK -->
+    <div class="logo">
+        <img src="logo-uniqa.png" class="header-logo">
+        <h1>
+            Iwona Buszko-Byszewska
+            <span>Agent Ubezpieczeniowy</span>
+        </h1>
+    </div>
+    <!-- PRAWA -->
+    <div class="header-photo">
+        <img src="agent.jpg">
+    </div>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
     </header>
 
     <main class="main">  
-        <section class="page-hero">  
+        <section class="hero">  
             <div class="hero-content">  
                 <h1>Nasza oferta ubezpieczeń Uniqa</h1>  
                 <p>Indywidualne polisy dopasowane do Twoich potrzeb</p>  
-                <div class="agent-contact">  
-                    <a href="tel:+48534374065" class="cta-button primary">📞 534 374 065</a>  
-                    <a href="mailto:iwona.buszko@uniqapolska.pl" class="cta-button secondary">Napisz email</a>  
-                </div>  
             </div>  
         </section>  
-
-        <section class="insurance-calculator">  
-            <h2>Kalkulator OC/AC</h2>  
-            <form class="calc-form" id="ocCalculator">  
-                <div class="form-row">  
-                    <div class="form-group">  
-                        <label for="engine">Pojemność silnika:</label>  
-                        <select id="engine">  
-                            <option value="1">1.0-1.4L</option>  
-                            <option value="1.2">1.5-1.9L</option>  
-                            <option value="1.5">2.0-2.5L</option>  
-                            <option value="2">2.6L+</option>  
-                        </select>  
-                    </div>  
-                    <div class="form-group">  
-                        <label for="mileage">Przebieg roczny:</label>  
-                        <select id="mileage">  
-                            <option value="0.9">&lt;5000 km</option>  
-                            <option value="1">5000-15000 km</option>  
-                            <option value="1.3">15000-25000 km</option>  
-                            <option value="1.6">25000+ km</option>  
-                        </select>  
-                    </div>  
-                </div>  
-                <button type="submit" class="cta-button large">Oblicz składkę OC</button>  
-                <div id="calc-result" class="calc-result"></div>  
-            </form>  
-        </section>  
-
-        <section class="policies-grid">  
+/**Po Kalkulatorze pusto ++ Kategorie **/
+        <section class="blog-categories">
+            <h2>Kategorie</h2>
+            <div class="categories">
+                <a href="oc.html" class="category-btn">OC/AC Auto</a>
+                <a href="dom.html" class="category-btn">Dom/Mieszkanie</a>
+                <a href="zycie.html" class="category-btn">Życie/Zdrowie</a>
+                <a href="porady.html" class="category-btn">Porady ogólne</a>
+            </div>
+        </section>
+            <section class="policies-grid">  
             <h2>Porównanie polis Uniqa</h2>  
             <div class="policies-table">  
                 <table>  
