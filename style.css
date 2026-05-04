@@ -660,4 +660,5 @@ img {
     color: white;
     padding: 120px 20px;
     text-align: left;
+    padding-top: 160px;  /* żeby header nie nachodził na tekst */
 }
