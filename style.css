@@ -116,14 +116,6 @@ ul {
     opacity: 0.9;
     border-bottom-color: var(--accent-orange);
 }
-.navbar {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
 .nav-menu {
     justify-self: start;
     display: flex;
@@ -553,59 +545,6 @@ article h2 {
 /* =========================================
    8. Responsywność (Mobile First adjustments)
    ========================================= */
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-menu {
-        position: fixed;
-        top: 70px; /* Wysokość headera */
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 70px);
-        background: var(--uniqa-blue);
-        flex-direction: column;
-        padding: 2rem;
-        transition: left 0.3s ease-in-out;
-        gap: 0;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-menu li {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 1.5rem;
-    }
-
-    .nav-menu a {
-        font-size: 1.2rem;
-        display: block;
-        padding: 1rem;
-    }
-
-    .hero h2, .page-hero h1 {
-        font-size: 1.8rem;
-    }
-
-    .privacy-content, .regulamin-content {
-        margin: 1rem;
-        padding: 1.5rem;
-        width: auto;
-    }
-
-    .cookie-content {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .cookie-buttons button {
-        width: 100%;
-    }
-}
 
 /* Utility: Container */
 .container {
@@ -652,33 +591,18 @@ img {
     border-radius: 10px;
 }
 /* =========================================
-   9. CUSTOM (Twoje zmiany)
+   9. HERO + CUSTOM (UPORZĄDKOWANE)
    ========================================= */
 
-/* HERO z obrazkiem */
-.hero {
-    display: flex;
-    align-items: center;
-    min-height: 400px;
-    padding: 60px 20px;
-
-    background: url('index.png') no-repeat right center;
-    background-size: cover;
-}
-
-/* tekst przesunięty w lewo */
+/* HERO - główny */
+/* treść hero */
 .hero-content {
     max-width: 600px;
     margin-left: 40px;
     text-align: left;
 }
 
-/* lepsza czytelność */
-.hero h2 {
-    font-size: 2.8rem;
-    color: #1a1a1a;
-}
-
+/* typografia */
 .hero h1 {
     font-size: 2.8rem;
     color: #1a1a1a;
@@ -690,107 +614,89 @@ img {
     font-size: 1.2rem;
     color: #333;
 }
-/* Kategorie (globalnie dla wszystkich stron) */
-.blog-categories {
-    padding: 40px 20px;
-    text-align: center;
-    background: #f4f6f9;
+
+/* HERO - OFERTA (override) */
+.hero-oferta {
+    background: url('Starosc.jpg') no-repeat right center;
+    background-size: contain;
 }
 
-.categories {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 20px;
-}
+/* =========================================
+   BLOG / AKTUALNOŚCI (GLOBAL)
+   ========================================= */
 
-.category-btn {
-    padding: 12px 25px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 50px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.category-btn:hover {
-    background: var(--uniqa-blue);
-    color: #fff;
-    border-color: var(--uniqa-blue);
-}
-.nav-menu {
-    display: flex;
-    gap: 20px;
-    flex-wrap: nowrap;   /* 🔥 blokuje łamanie */
-}
-
-.nav-menu a {
-    white-space: nowrap; /* 🔥 tekst w jednej linii */
-}
-.navbar {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-}
-.policies-grid {
-    max-width: 1000px;
+.blog-posts {
+    max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
-.policies-grid h2 {
+/* nagłówek w gridzie */
+.blog-posts > h2 {
+    grid-column: 1 / -1;
     text-align: center;
-    color: var(--uniqa-blue);
-    margin-bottom: 25px;
 }
 
-.policies-table table {
-    width: 100%;
-    border-collapse: collapse;
+/* kafelek */
+.blog-post {
     background: #fff;
     border-radius: 10px;
-    overflow: hidden;
+    padding: 25px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: transform 0.2s ease;
 }
 
-/* HEADER */
-.policies-table thead {
-    background: var(--uniqa-blue);
-    color: #fff;
+.blog-post:hover {
+    transform: translateY(-5px);
 }
 
-.policies-table th {
-    padding: 15px;
-    font-weight: 600;
-    text-align: center;
+/* featured */
+.blog-post.featured {
+    border-left: 5px solid var(--uniqa-blue);
+    background: #f0f7ff;
 }
 
-/* BODY */
-.policies-table td {
-    padding: 14px;
-    text-align: center;
-    border-bottom: 1px solid #eee;
+/* meta */
+.post-meta {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
 }
 
-/* pierwszy kolumna (nazwy) */
-.policies-table td:first-child {
-    text-align: left;
-    font-weight: 600;
+/* tytuł */
+.blog-post h2 {
+    margin: 10px 0;
+    color: #222;
+    font-size: 1.3rem;
 }
 
-/* hover */
-.policies-table tbody tr:hover {
-    background: #f5f8ff;
+/* opis */
+.blog-post p {
+    color: #555;
 }
 
-/* ✓ zielone */
-.policies-table td:contains("✓") {
-    color: green;
+/* link */
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--uniqa-blue);
+    font-weight: bold;
 }
 
+.read-more:hover {
+    text-decoration: underline;
+}
 /* =========================================
    10. O mnie
    ========================================= */
@@ -983,34 +889,68 @@ img {
 }
 
 @media (max-width: 768px) {
-   .hero {
-       background-position: center;
-       min-height: auto;
-       padding: 60px 20px;
-   }
 
-   .hero-content {
-       max-width: 100%;
-       margin-left: 0;
-       text-align: center;
-   }
-    .header-logo {
-        height: 70px;
+    /* NAV */
+    .navbar {
+        grid-template-columns: 1fr auto;
     }
 
-    .navbar .logo h1,
-    .navbar .logo h2 {
-        font-size: 1.1rem;
+    .header-photo {
+        display: none;
     }
 
+    /* HERO */
+    .hero {
+        background-position: center;
+        min-height: auto;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* MENU */
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: var(--uniqa-blue);
+        flex-direction: column;
+        padding: 2rem;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .nav-menu a {
+        font-size: 1.2rem;
+    }
+
+    /* ABOUT */
     .about-hero-content {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 28px;
-    }
-
-    .about-hero-photo img {
-        width: min(260px, 80vw);
     }
 }
 /* HERO - OFERTA */
