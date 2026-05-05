@@ -657,12 +657,13 @@ img {
 
 /* HERO z obrazkiem */
 .hero {
-    background: url('index.png') no-repeat right center;
-    background-size: cover;
-    min-height: 500px;
-
     display: flex;
     align-items: center;
+    min-height: 400px;
+    padding: 60px 20px;
+
+    background: url('index.png') no-repeat right center;
+    background-size: cover;
 }
 
 /* tekst przesunięty w lewo */
