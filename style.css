@@ -1016,3 +1016,73 @@ img {
     background: url('Starosc.jpg') no-repeat right center;
     background-size: contain; /* 🔥 kluczowe dla kwadratowego obrazu */
 }
+/* =========================================
+   BLOG / AKTUALNOŚCI (GLOBAL)
+   ========================================= */
+
+.blog-posts {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* pojedynczy kafelek */
+.blog-post {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+/* wyróżniony */
+.blog-post.featured {
+    border-left: 5px solid var(--uniqa-blue);
+    background: #f0f7ff;
+}
+
+/* meta */
+.post-meta {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.post-meta .category {
+    color: var(--uniqa-blue);
+    font-weight: bold;
+}
+
+/* tytuł */
+.blog-post h2 {
+    margin: 10px 0;
+    color: #222;
+    font-size: 1.3rem;
+}
+
+/* opis */
+.blog-post p {
+    color: #555;
+}
+
+/* link */
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--uniqa-blue);
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
