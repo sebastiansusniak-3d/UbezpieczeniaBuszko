@@ -690,16 +690,6 @@ img {
     font-size: 1.2rem;
     color: #333;
 }
-.hero {
-    background: url('index.png') no-repeat right center;
-    background-size: cover;
-
-    min-height: 360px;   /* 🔥 było za duże */
-    padding: 100px 20px 60px; /* 🔥 mniej na dole */
-
-    display: flex;
-    align-items: center;
-}
 /* Kategorie (globalnie dla wszystkich stron) */
 .blog-categories {
     padding: 40px 20px;
@@ -993,6 +983,17 @@ img {
 }
 
 @media (max-width: 768px) {
+   .hero {
+       background-position: center;
+       min-height: auto;
+       padding: 60px 20px;
+   }
+
+   .hero-content {
+       max-width: 100%;
+       margin-left: 0;
+       text-align: center;
+   }
     .header-logo {
         height: 70px;
     }
