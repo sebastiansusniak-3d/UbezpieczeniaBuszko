@@ -591,111 +591,147 @@ img {
     border-radius: 10px;
 }
 /* =========================================
-   9. HERO + CUSTOM (UPORZĄDKOWANE)
+   9. HERO + BLOG + KATEGORIE (STABILNA WERSJA)
    ========================================= */
 
-/* HERO - główny */
-/* treść hero */
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 420px;
+    padding: 60px 20px;
+
+    background: url('index.png') no-repeat right center;
+    background-size: cover;
+}
+
 .hero-content {
     max-width: 600px;
     margin-left: 40px;
-    text-align: left;
 }
 
-/* typografia */
 .hero h1 {
-    font-size: 2.8rem;
-    color: #1a1a1a;
-    line-height: 1.15;
-    margin-bottom: 12px;
+    font-size: 2.6rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    color: #333;
+    font-size: 1.1rem;
+    color: var(--text-gray);
 }
 
-/* HERO - OFERTA (override) */
+/* OFERTA HERO */
 .hero-oferta {
     background: url('Starosc.jpg') no-repeat right center;
     background-size: contain;
 }
 
-/* =========================================
-   BLOG / AKTUALNOŚCI (GLOBAL)
-   ========================================= */
+/* ========================
+   KATEGORIE
+   ======================== */
+
+.blog-categories {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f4f6f9;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.category-btn {
+    padding: 12px 25px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.category-btn:hover {
+    background: var(--uniqa-blue);
+    color: #fff;
+}
+
+/* ========================
+   BLOG
+   ======================== */
 
 .blog-posts {
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 60px auto;
     padding: 0 20px;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+    gap: 30px;
 }
 
-/* nagłówek w gridzie */
+/* nagłówek */
 .blog-posts > h2 {
     grid-column: 1 / -1;
     text-align: center;
 }
 
-/* kafelek */
+/* kafelki */
 .blog-post {
     background: #fff;
     border-radius: 10px;
     padding: 25px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: var(--shadow);
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
-    transition: transform 0.2s ease;
-}
-
-.blog-post:hover {
-    transform: translateY(-5px);
-}
-
-/* featured */
-.blog-post.featured {
-    border-left: 5px solid var(--uniqa-blue);
-    background: #f0f7ff;
-}
-
-/* meta */
-.post-meta {
-    font-size: 0.9em;
-    color: #777;
-    margin-bottom: 10px;
-    display: flex;
     gap: 10px;
 }
 
-/* tytuł */
 .blog-post h2 {
-    margin: 10px 0;
-    color: #222;
     font-size: 1.3rem;
+    color: #222;
 }
 
-/* opis */
 .blog-post p {
-    color: #555;
+    color: var(--text-gray);
 }
 
-/* link */
+.post-meta {
+    font-size: 0.9rem;
+    color: #777;
+}
+
 .read-more {
-    display: inline-block;
-    margin-top: 15px;
+    margin-top: auto;
     color: var(--uniqa-blue);
-    font-weight: bold;
+    font-weight: 600;
 }
 
-.read-more:hover {
-    text-decoration: underline;
+/* ========================
+   MOBILE
+   ======================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        background-position: center;
+        padding: 60px 20px;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
 }
 /* =========================================
    10. O mnie
