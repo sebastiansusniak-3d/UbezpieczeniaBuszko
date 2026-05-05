@@ -1,0 +1,125 @@
+/* RESET + VARIABLES */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+:root {
+    --blue:#003087;
+    --light:#E6F0FA;
+    --text:#1A1A1A;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--light);
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+.header {
+    background: var(--blue);
+    color:#fff;
+    padding:15px 0;
+}
+
+.navbar {
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
+    align-items:center;
+}
+
+.nav-menu {
+    display:flex;
+    gap:20px;
+}
+
+.nav-menu a {
+    color:#fff;
+}
+
+/* HERO */
+.hero {
+    display:flex;
+    align-items:center;
+    min-height:420px;
+    padding:60px 20px;
+    background-size:cover;
+}
+
+/* warianty */
+.hero-home { background:url('index.png') no-repeat right center; }
+.hero-oferta { background:url('Starosc.jpg') no-repeat right center; }
+
+/* HERO TEXT */
+.hero-content {
+    max-width:600px;
+}
+
+/* KATEGORIE */
+.blog-categories {
+    text-align:center;
+    padding:40px 20px;
+}
+
+.categories {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.category-btn {
+    padding:10px 20px;
+    border-radius:30px;
+    background:#fff;
+    border:1px solid #ddd;
+}
+
+/* BLOG */
+.blog-posts {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    padding:40px 20px;
+}
+
+.blog-post {
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+}
+
+/* TABLE */
+.policies-table table {
+    width:100%;
+    border-collapse:collapse;
+}
+
+.policies-table th,
+.policies-table td {
+    padding:10px;
+    border-bottom:1px solid #ddd;
+}
+
+/* CTA */
+.cta-section {
+    text-align:center;
+    padding:40px;
+}
+
+.cta-button {
+    padding:12px 25px;
+    background:var(--blue);
+    color:#fff;
+    border-radius:30px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .navbar { grid-template-columns:1fr; text-align:center; }
+    .hero { text-align:center; background-position:center; }
+}
