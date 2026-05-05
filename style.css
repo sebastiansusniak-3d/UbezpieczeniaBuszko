@@ -1011,3 +1011,8 @@ img {
         width: min(260px, 80vw);
     }
 }
+/* HERO - OFERTA */
+.hero-oferta {
+    background: url('Starosc.jpg') no-repeat right center;
+    background-size: contain; /* 🔥 kluczowe dla kwadratowego obrazu */
+}
