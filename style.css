@@ -1069,7 +1069,10 @@ img {
     color: #222;
     font-size: 1.3rem;
 }
-
+.blog-posts > h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
 /* opis */
 .blog-post p {
     color: #555;
