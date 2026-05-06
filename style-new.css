@@ -88,20 +88,26 @@ body {
 .hero h1 {
     font-size: 2.6rem;
     margin-bottom: 10px;
+    color: var(--blue);
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: #444;
+    color: var(--blue);
 }
 
 /* warianty */
-.hero-home { background:url('index.png') no-repeat right center; }
+.hero-home {
+    background: url('index.png') no-repeat center center;
+    background-size: cover;
+}
 .hero-oferta { background:url('Starosc.jpg') no-repeat right center; }
 
 /* HERO TEXT */
 .hero-content {
-    max-width:600px;
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
 }
 
 /* KATEGORIE */
@@ -163,8 +169,16 @@ body {
 
 /* CTA */
 .cta-section {
-    text-align:center;
-    padding:40px;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta-section h2 {
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    margin-bottom: 40px;
 }
 
 .cta-button {
@@ -172,6 +186,7 @@ body {
     background:var(--blue);
     color:#fff;
     border-radius:30px;
+    display: inline-block;
 }
 
 /* MOBILE */
