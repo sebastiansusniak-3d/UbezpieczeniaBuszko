@@ -215,6 +215,51 @@ body {
         width: 90px;
     }
 
+    /* ZDJĘCIE */
+    .header-photo {
+        display: none;
+    }
+
+    /* HERO */
+    .hero {
+        min-height: 500px;
+        padding: 40px 20px;
+        text-align: center;
+
+        background-position: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    /* KATEGORIE */
+    .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-btn {
+        width: 90%;
+        max-width: 320px;
+        text-align: center;
+    }
+
+    /* BLOG */
+    .blog-posts {
+        grid-template-columns: 1fr;
+    }
+}
+
 .section-title {
     text-align: center;
     font-size: 2.2rem;
