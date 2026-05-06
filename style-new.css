@@ -187,3 +187,90 @@ body {
     margin: 15px auto 0;
     border-radius: 10px;
 }
+/* AKTUALNOŚCI - KAFELKI */
+
+.blog-posts {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* nagłówek sekcji */
+.blog-posts > .section-title {
+    grid-column: 1 / -1;
+}
+
+/* pojedynczy artykuł */
+.blog-post {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    transition: transform 0.2s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+/* wyróżniony */
+.blog-post.featured {
+    border-left: 5px solid var(--blue);
+    background: #f0f7ff;
+}
+
+/* meta */
+.post-meta {
+    display: flex;
+    gap: 12px;
+
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* kategoria */
+.post-meta .category {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+/* tytuł */
+.blog-post h2 {
+    font-size: 1.3rem;
+    color: #222;
+    line-height: 1.4;
+}
+
+/* opis */
+.blog-post p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* link */
+.read-more {
+    margin-top: auto;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+/* cały kafelek klikalny */
+.blog-post a {
+    text-decoration: none;
+    color: inherit;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    height: 100%;
+}
