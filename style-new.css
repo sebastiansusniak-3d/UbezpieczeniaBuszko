@@ -118,10 +118,21 @@ body {
 }
 
 .category-btn {
-    padding:10px 20px;
-    border-radius:30px;
-    background:#fff;
-    border:1px solid #ddd;
+    padding: 12px 25px;
+
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+
+    color: #333;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.category-btn:hover {
+    background: var(--blue);
+    color: #fff;
 }
 
 /* BLOG */
