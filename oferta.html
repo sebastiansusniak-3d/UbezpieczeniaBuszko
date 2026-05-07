@@ -2,43 +2,41 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Oferta ubezpieczeń Uniqa: OC, AC, NNW. Skalkuluj składkę online z Iwoną Buszko-Byszewską.">
     <title>Oferta | Iwona Buszko-Byszewska | Uniqa Agent</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="style-new.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
-       <nav class="navbar">
-    
-    <!-- LEWA: MENU -->
-    <ul class="nav-menu">
-        <li><a href="index.html">Strona główna</a></li>
-        <li><a href="oferta.html">Oferta</a></li>
-        <li><a href="o-mnie.html">O mnie</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-    </ul>
+    <div class="container navbar">
 
-    <!-- ŚRODEK: LOGO + NAZWA -->
-    <div class="logo">
-        <img src="logo-uniqa.png" alt="Logo Uniqa" class="header-logo" onerror="this.src='logo-uniqa.jpg'; this.onerror=null;">
-        <h1>
-            Iwona Buszko-Byszewska
-            <span>Agent Ubezpieczeniowy</span>
-        </h1>
+        <!-- MENU -->
+        <ul class="nav-menu">
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="oferta.html">Oferta</a></li>
+            <li><a href="o-mnie.html">O mnie</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="logo-uniqa.png" alt="Logo Uniqa" style="height:60px;">
+            <div>
+                <strong>Iwona Buszko-Byszewska</strong><br>
+                <small>Agent Ubezpieczeniowy</small>
+            </div>
+        </div>
+
+        <!-- ZDJĘCIE -->
+        <div class="header-photo">
+            <img src="agent.jpg" alt="Agent" style="height:70px;border-radius:50%;">
+        </div>
+
     </div>
-
-    <!-- PRAWA: ZDJĘCIE -->
-    <div class="header-photo">
-        <img src="agent.jpg" alt="Iwona Buszko-Byszewska">
-    </div>
-
-    <!-- MOBILE -->
-    <div class="hamburger"><span></span><span></span><span></span></div>
-</nav>
-    </header>
+</header>
 
     <main class="main">  
         <section class="hero hero-oferta">  
@@ -47,10 +45,12 @@
                 <p>Indywidualne polisy dopasowane do Twoich potrzeb</p>  
             </div>  
         </section>  
+        
         <section class="blog-categories">
-            <h2>Ubezpieczenia:</h2>
+            <h2 class="section-title">Oferta ubezpieczeń</h2>
+        
             <div class="categories">
-                <a href="zycie.html" class="category-btn">Życie/Zdrowie (dorośli i dzieci)</a>
+                <a href="zycie.html" class="category-btn">Życie/Zdrowie</a>
                 <a href="dom.html" class="category-btn">Dom/Mieszkanie</a>
                 <a href="turystyka.html" class="category-btn">Turystyka</a>
                 <a href="oc.html" class="category-btn">OC/AC Auto</a>
