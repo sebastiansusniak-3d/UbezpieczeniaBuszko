@@ -103,7 +103,7 @@ body {
     background-position: center center;
     background-size: contain;
     
-    background-color: var(--light);
+    background-color: #dfe5ee;
 }
 .hero-oferta { background:url('Starosc.jpg') no-repeat right center; }
 
