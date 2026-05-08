@@ -399,9 +399,11 @@ body {
     .hero h1 {
         font-size: 2rem;
         line-height: 1.15;
+        color: var(--blue);
     }
     .hero p {
         font-size: 1rem;
+        color: rgba(0,0,0,0.72);
     }
 
     /* KATEGORIE */
