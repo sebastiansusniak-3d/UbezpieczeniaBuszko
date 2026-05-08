@@ -142,15 +142,60 @@ body {
     color: #fff;
 }
 /* TABLE */
-.policies-table table {
-    width:100%;
-    border-collapse:collapse;
+
+.policies-grid {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
 }
 
-.policies-table th,
+.policies-grid h2 {
+    text-align: center;
+    color: var(--blue);
+    margin-bottom: 35px;
+    font-size: 2rem;
+}
+
+.policies-table {
+    background: #fff;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+
+    overflow-x: auto;
+}
+
+.policies-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.policies-table th {
+    background: #f3f6fb;
+    color: var(--blue);
+    font-weight: 700;
+    padding: 18px 15px;
+    text-align: center;
+}
+
 .policies-table td {
-    padding:10px;
-    border-bottom:1px solid #ddd;
+    padding: 18px 15px;
+
+    border-bottom: 1px solid #e5e5e5;
+
+    text-align: center;
+}
+
+.policies-table tbody tr:hover {
+    background: #f8fbff;
+}
+
+.policies-table td:first-child {
+    font-weight: bold;
+    color: #222;
 }
 
 /* CTA - ostatnia stopka index*/
