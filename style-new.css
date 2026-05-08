@@ -67,7 +67,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    min-height: 420px;
+    min-height: 300px;
     padding: 60px 20px;
     background-size: cover;
 }
@@ -105,11 +105,12 @@ body {
     
     background-color: #dfe5ee;
 }
-.hero-oferta { background:url('Starosc.jpg') no-repeat right center; }
+.hero-oferta { background:url('Starosc.jpg') no-repeat right center; min-height: 300px;}
 
 /* HERO TEXT */
 .hero-content {
     max-width: 600px;
+   
     position: relative;
     z-index: 2;
 }
@@ -211,11 +212,10 @@ body {
 
     /* HERO */
     .hero {
-        min-height: 500px;
+        min-height: 300px;
         padding: 40px 20px;
         text-align: center;
         background-position: center;
-        min-height: 420px;
     }
     .hero-content {
         max-width: 100%;
@@ -243,6 +243,9 @@ body {
     /* BLOG */
     .blog-posts {
         grid-template-columns: 1fr;
+    }
+    .policies-table {
+    overflow-x: auto;
     }
 }
 
