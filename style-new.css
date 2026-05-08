@@ -93,28 +93,32 @@ body {
 
 /* warianty */
 .hero-home {
-    background-image: url('index.png');
+    background-image:
+        linear-gradient(rgba(255,255,255,0.72),
+        rgba(255,255,255,0.72)),
+        url('index.png');
+
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    
+
     background-color: #dfe5ee;
 }
-       .hero-oferta {
-        background-image: url('Starosc.jpg');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-    
-        background-color: #dfe6ef;
-    }
+.hero-oferta {
+    background-image:
+        linear-gradient(rgba(255,255,255,0.72),
+        rgba(255,255,255,0.72)),
+        url('Starosc.jpg');
+
+    background-size: cover;
+    background-color: #dfe6ef;
+}
 /* HERO TEXT */
 .hero-content {
-    max-width: 600px;
+    max-width: 700px;
     position: relative;
     z-index: 2;
 
-    padding-top: 140px;
 }
 
 /* KATEGORIE */
@@ -370,41 +374,21 @@ body {
     }
 
     /* HERO */
-       .hero {
-        position: relative;
-        min-height: 340px;
-    
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-    
-        padding-bottom: 45px;
-    
-        text-align: center;
-    
-        background-image:
-            linear-gradient(rgba(255,255,255,0.72),
-            rgba(255,255,255,0.72)),
-            url('images/index.png');
-    
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    
-        background-color: #dfe6ef;
-    }
-    .hero-content {
-        max-width: 100%;
-    }
-    .hero h1 {
-        font-size: 2rem;
-        line-height: 1.15;
-        color: var(--blue);
-    }
-    .hero p {
-        font-size: 1rem;
-        color: rgba(0,0,0,0.72);
-    }
+.hero {
+    min-height: 300px;
+    padding: 30px 15px 35px;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    line-height: 1.15;
+    color: var(--blue);
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #333;
+}
 
     /* KATEGORIE */
     .categories {
