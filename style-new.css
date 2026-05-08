@@ -80,11 +80,6 @@ body {
     background: rgba(255,255,255,0.65);
 }
 
-.hero-content {
-    position: relative;
-    max-width: 600px;
-}
-
 .hero h1 {
     font-size: 2rem;
     color: var(--blue);
@@ -212,13 +207,15 @@ body {
     }
 
     /* HERO */
-    .hero {
+       .hero {
         position: relative;
-        min-height: 420px;
+        min-height: 340px;
     
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
+    
+        padding-bottom: 45px;
     
         text-align: center;
     
