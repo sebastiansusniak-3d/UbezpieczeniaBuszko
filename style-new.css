@@ -100,8 +100,14 @@ body {
     
     background-color: #dfe5ee;
 }
-.hero-oferta { background:url('Starosc.jpg') no-repeat right center; min-height: 300px;}
-
+    .hero-oferta {
+        background-image: url('Starosc.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    
+        background-color: #dfe6ef;
+    }
 /* HERO TEXT */
 .hero-content {
     max-width: 600px;
