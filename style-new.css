@@ -70,13 +70,18 @@ body {
     justify-content: center;
     min-height: 300px;
     padding: 40px 20px 45px;
-    padding-bottom: 45px;
     text-align: center;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
+/* HERO TEXT */
+.hero-content {
+    max-width: 700px;
+    position: relative;
+    z-index: 2;
 
+}
 /* overlay dla czytelności */
 .hero::before {
     content: "";
@@ -133,14 +138,6 @@ body {
 
     background-color: #dfe5ee;
 }
-/* HERO TEXT */
-.hero-content {
-    max-width: 700px;
-    position: relative;
-    z-index: 2;
-
-}
-
 /* KATEGORIE */
 .blog-categories {
     text-align:center;
