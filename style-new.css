@@ -66,11 +66,16 @@ body {
 .hero {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: center;
     min-height: 300px;
-    padding: 60px 20px;
-    background-size: cover;
+    padding: 40px 20px 45px;
+    padding-bottom: 45px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
+
 
 /* overlay dla czytelności */
 .hero::before {
