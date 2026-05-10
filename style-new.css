@@ -94,7 +94,7 @@ body {
 /* WARIANDY HERO DLA INDEX i PODSTRON */
 .hero-home {
     background-image:
-        linear-gradient(rgba(255,255,255,0.72),
+        linear-gradient(rgba(255,255,255,0.35),
         rgba(255,255,255,0.72)),
         url('index.png');
 
@@ -106,9 +106,21 @@ body {
 }
 .hero-oferta {
     background-image:
-        linear-gradient(rgba(255,255,255,0.72),
+        linear-gradient(rgba(255,255,255,0.35),
         rgba(255,255,255,0.72)),
         url('Starosc.jpg');
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    background-color: #dfe5ee;
+}
+.hero-o-mnie {
+    background-image:
+        linear-gradient(rgba(255,255,255,0.35),
+        rgba(255,255,255,0.72)),
+        url('o-mnie.jpg');
 
     background-repeat: no-repeat;
     background-position: center center;
