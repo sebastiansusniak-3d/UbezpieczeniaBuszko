@@ -91,7 +91,7 @@ body {
     color: #000;
 }
 
-/* warianty */
+/* WARIANDY HERO DLA INDEX i PODSTRON */
 .hero-home {
     background-image:
         linear-gradient(rgba(255,255,255,0.72),
@@ -110,8 +110,11 @@ body {
         rgba(255,255,255,0.72)),
         url('Starosc.jpg');
 
-    background-size: cover;
-    background-color: #dfe6ef;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    background-color: #dfe5ee;
 }
 /* HERO TEXT */
 .hero-content {
