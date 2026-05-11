@@ -117,9 +117,234 @@ body {
     background-color: #dfe5ee;
 }
 
-.hero-o-mnie {
-    background-image: url('o-mnie.jpg');
-    background-color: #dfe5ee;
+/* =========================================
+   O mnie
+   ========================================= */
+
+.about-hero {
+    background: #dfe5ee;
+}
+
+.about-hero-content {
+    width: min(1100px, 100%);
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+
+    gap: 40px;
+    align-items: center;
+}
+
+.about-hero h2 {
+    font-size: 1.55rem;
+    color: var(--blue);
+    margin-bottom: 12px;
+}
+
+.about-hero-photo {
+    justify-self: center;
+}
+
+.about-hero-photo img {
+    width: 300px;
+    aspect-ratio: 1;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 8px solid white;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+
+    background: white;
+}
+
+/* TIMELINE */
+
+.about-timeline,
+.why-me {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.about-timeline h2,
+.certificates h2,
+.why-me h2,
+.cta-section h2 {
+    text-align: center;
+    color: var(--blue);
+    margin-bottom: 35px;
+    font-size: 2rem;
+}
+
+.timeline {
+    position: relative;
+    border-left: 3px solid var(--blue);
+
+    margin-left: 20px;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 36px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+
+    position: absolute;
+
+    left: -39px;
+    top: 5px;
+
+    width: 15px;
+    height: 15px;
+
+    background: white;
+
+    border: 3px solid var(--blue);
+
+    border-radius: 50%;
+}
+
+.timeline-year {
+    color: #d4a94d;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+.timeline-content {
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.timeline-content h3 {
+    color: var(--blue);
+    margin-bottom: 8px;
+}
+
+.timeline-content p,
+.cert-item p {
+    color: #555;
+}
+
+/* CERTYFIKATY */
+
+.certificates {
+    padding: 60px 20px;
+    background: white;
+}
+
+.cert-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+
+    gap: 25px;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+.cert-item {
+    background: #eef3fa;
+
+    padding: 30px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+
+    text-align: center;
+
+    border-top: 4px solid var(--blue);
+}
+
+.cert-icon {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+
+    color: white;
+
+    font-size: 1.2rem;
+}
+
+.cert-icon.uniqa {
+    background: var(--blue);
+}
+
+.cert-icon.knf {
+    background: #e30613;
+}
+
+.cert-icon.piu {
+    background: #222;
+}
+
+/* BENEFITY */
+
+.benefits-list {
+    display: grid;
+    gap: 14px;
+}
+
+.benefits-list li {
+    background: white;
+
+    border-radius: 14px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+
+    padding: 18px 20px;
+
+    color: #222;
+}
+
+.benefits-list li strong {
+    color: var(--blue);
+}
+
+/* CTA */
+
+.cta-section {
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background: white;
+}
+
+.cta-section p {
+    margin-bottom: 24px;
 }
 
 /* KATEGORIE */
@@ -409,5 +634,15 @@ body {
     }
     .policies-table {
     overflow-x: auto;
+    }
+    /* O MNIE */
+    .about-hero-content {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .about-hero-photo img {
+        width: 220px;
     }
 }
