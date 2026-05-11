@@ -168,14 +168,11 @@ body {
 
 .about-hero-photo img {
     width: 320px;
-    height: 320px;
-
-    object-fit: cover;
-
-    border-radius: 50%;
-
+    height: 420px;
+    object-fit: contain;
+    background: white;
+    border-radius: 30px;
     border: 8px solid white;
-
     box-shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
 
@@ -672,6 +669,6 @@ body {
     
     .about-hero-photo img {
         width: 220px;
-        height: 220px;
+        height: 300px;
     }
 }
