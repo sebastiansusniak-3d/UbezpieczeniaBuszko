@@ -65,16 +65,21 @@ body {
 /* HERO */
 .hero {
     position: relative;
+
     display: flex;
     align-items: flex-end;
     justify-content: center;
+
     min-height: 300px;
-    padding: 40px 20px 0px;
+
+    padding: 40px 20px 45px;
+
     text-align: center;
+
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: contain;
 }
-
 /* HERO TEXT */
 .hero-content {
     max-width: 700px;
@@ -103,41 +108,20 @@ body {
 
 /* WARIANDY HERO DLA INDEX i PODSTRON */
 .hero-home {
-    background-image:
-        linear-gradient(rgba(255,255,255,0.35),
-        rgba(255,255,255,0.72)),
-        url('index.png');
-
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-
+    background-image: url('index.png');
     background-color: #dfe5ee;
 }
+
 .hero-oferta {
-    background-image:
-        linear-gradient(rgba(255,255,255,0.35),
-        rgba(255,255,255,0.72)),
-        url('Starosc.jpg');
-
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-
+    background-image: url('Starosc.jpg');
     background-color: #dfe5ee;
 }
+
 .hero-o-mnie {
-    background-image:
-        linear-gradient(rgba(255,255,255,0.35),
-        rgba(255,255,255,0.72)),
-        url('o-mnie.jpg');
-
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-
+    background-image: url('o-mnie.jpg');
     background-color: #dfe5ee;
 }
+
 /* KATEGORIE */
 .blog-categories {
     text-align:center;
