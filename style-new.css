@@ -333,6 +333,7 @@ body {
 /* BENEFITY */
 
 .benefits-list {
+    list-style: none;
     display: grid;
     gap: 14px;
 }
