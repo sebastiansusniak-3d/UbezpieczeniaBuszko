@@ -5,87 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Kontakt z Iwoną Buszko-Byszewską Uniqa. Tel: 534 374 065 | iwona.buszko@uniqapolska.pl">
     <title>Kontakt | Iwona Buszko-Byszewska | Uniqa Agent</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-new.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    
-    <style>
-        /* Style dla układu: Logo na górze, dane pod spodem */
-        .navbar .logo {
-            display: flex;
-            flex-direction: column; /* Układ pionowy */
-            align-items: center; /* Wyśrodkowanie elementów (logo i tekst) */
-            justify-content: center;
-            gap: 10px; /* Odstęp między logo a tekstem */
-            text-align: center;
-        }
-
-        .header-logo {
-            height: 90px; /* POWIĘKSZONE LOGO NA GÓRZE */
-            width: auto;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .navbar .logo h1 {
-            margin: 0;
-            font-size: 1.3rem; /* Rozmiar czcionki dla nazwiska */
-            line-height: 1.4;
-            font-weight: 700;
-            color: #333; /* Kolor tekstu dla lepszej czytelności */
-        }
-
-        .navbar .logo h1 span {
-            display: block;
-            font-weight: 400;
-            font-size: 0.9em;
-            color: #555;
-            margin-top: 4px;
-        }
-
-        /* Dostosowanie dla urządzeń mobilnych */
-        @media (max-width: 768px) {
-            .header-logo {
-                height: 70px; /* Nieco mniejsze na telefonie */
-            }
-            .navbar .logo h1 {
-                font-size: 1.1rem;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <!-- 1. NA GÓRZE: POWIĘKSZONE LOGO -->
-                <img src="logo-uniqa.png" alt="Logo Uniqa" class="header-logo" onerror="this.src='logo-uniqa.jpg'; this.onerror=null;">
-                
-                <!-- 2. POD LOGO: DANE -->
-                <h1>
-                    Iwona Buszko-Byszewska
-                    <span>Agent Ubezpieczeniowy</span>
-                </h1>
+    <!-- HEADER -->
+<header class="header">
+    <div class="container navbar">
+
+        <!-- MENU -->
+        <ul class="nav-menu">
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="oferta.html">Oferta</a></li>
+            <li><a href="o-mnie.html">O mnie</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="logo-uniqa.png" alt="Logo Uniqa" style="height:60px;">
+            <div>
+                <strong>Iwona Buszko-Byszewska</strong><br>
+                <small>Agent Ubezpieczeniowy</small>
             </div>
+        </div>
 
-            <ul class="nav-menu">
-                <li><a href="index.html">Strona główna</a></li>
-                <li><a href="oferta.html">Oferta</a></li>
-                <li><a href="o-mnie.html">O mnie</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-            <div class="hamburger"><span></span><span></span><span></span></div>
-        </nav>
-    </header>
+        <!-- ZDJĘCIE -->
+        <div class="header-photo">
+            <img src="agent.jpg" alt="Agent" style="height:70px;border-radius:50%;">
+        </div>
 
+    </div>
+</header>
     <main class="main">
-        <section class="page-hero">
-            <div class="hero-content">
-                <h1>Skontaktuj się ze mną</h1>
-                <p>Iwona Buszko-Byszewska - Twój agent Uniqa</p>
+        <section class="hero hero-kontakt">
+            <div class="container hero-content">
+            <h1>Skontaktuj się ze mną</h1>
+            <p>Pomogę dobrać najlepsze ubezpieczenie</p>
+            <p>Iwona Buszko-Byszewska - Twój agent Uniqa</p>
             </div>
         </section>
-
+     
         <section class="contact-grid">
             <div class="contact-card agent-direct">
                 <h2>📞 Bezpośredni kontakt</h2>
