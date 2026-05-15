@@ -113,7 +113,13 @@ body {
     background-image: url('kontakt.jpg');
     background-color: #dfe5ee;
 }
-
+.hero-home::before,
+.hero-oferta::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.45);
+}
 /* =========================================
    O mnie
    ========================================= */
