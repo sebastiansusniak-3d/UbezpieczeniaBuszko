@@ -78,7 +78,7 @@ body {
 
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
 }
 /* HERO TEXT */
 .hero-content {
@@ -379,9 +379,7 @@ body {
 
 .cta-section {
     text-align: center;
-
     padding: 60px 20px;
-
     background: white;
 }
 
@@ -477,11 +475,6 @@ body {
 }
 
 /* CTA - ostatnia stopka index*/
-.cta-section {
-    text-align: center;
-    padding: 50px 20px 70px;
-}
-
 .cta-section h2 {
     margin-bottom: 20px;
 }
@@ -690,9 +683,6 @@ body {
     }
     .nav-menu a {
         font-size: 1.2rem;
-    }
-    .nav-menu a {
-        font-size: 1rem;
     }
     /* LOGO */
     .logo img {
