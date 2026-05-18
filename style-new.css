@@ -120,6 +120,9 @@ body {
 .hero-dom {
     background-image: url('dom.jpg');
     background-color: #dfe5ee;
+
+    align-items: flex-end;
+    padding-bottom: 35px;
 }
 .hero-home::before,
 .hero-oferta::before,
