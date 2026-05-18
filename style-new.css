@@ -113,6 +113,10 @@ body {
     background-image: url('kontakt.jpg');
     background-color: #dfe5ee;
 }
+.hero-zycie {
+    background-image: url('zycie.jpg');
+    background-color: #dfe5ee;
+}
 .hero-home::before,
 .hero-oferta::before {
     content: "";
