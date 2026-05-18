@@ -64,40 +64,99 @@
 
         <section class="contact-form-section">
             <h2>Wyślij wiadomość</h2>
-            <form class="contact-form" id="contactForm">
+        
+            <form 
+                class="contact-form"
+                action="https://formsubmit.co/iwona.buszko@uniqapolska.pl"
+                method="POST">
+        
                 <div class="form-row">
+        
                     <div class="form-group">
                         <label>Imię i nazwisko *</label>
-                        <input type="text" id="name" required>
+        
+                        <input 
+                            type="text"
+                            id="name"
+                            name="name"
+                            required>
                     </div>
+        
                     <div class="form-group">
                         <label>Telefon *</label>
-                        <input type="tel" id="phone" required>
+        
+                        <input 
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            required>
                     </div>
+        
                 </div>
+        
                 <div class="form-row">
+        
                     <div class="form-group">
                         <label>Email *</label>
-                        <input type="email" id="email" required>
+        
+                        <input 
+                            type="email"
+                            id="email"
+                            name="email"
+                            required>
                     </div>
+        
                     <div class="form-group">
                         <label>Rodzaj ubezpieczenia</label>
-                        <select id="insurance-type">
+        
+                        <select 
+                            id="insurance-type"
+                            name="insurance-type">
+        
                             <option>OC/AC Auto</option>
                             <option>Mieszkanie/Dom</option>
                             <option>Życie i zdrowie</option>
                             <option>Inne</option>
+        
                         </select>
                     </div>
+        
                 </div>
+        
                 <div class="form-group">
+        
                     <label>Wiadomość</label>
-                    <textarea id="message" rows="5" placeholder="Opisz swoje potrzeby..."></textarea>
+        
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Opisz swoje potrzeby..."></textarea>
+        
                 </div>
-                <button type="submit" class="cta-button large">Wyślij wiadomość</button>
+        
+                <!-- FORM SUBMIT -->
+        
+                <input type="hidden" name="_captcha" value="false">
+        
+                <input 
+                    type="hidden"
+                    name="_subject"
+                    value="Nowa wiadomość ze strony UNIQA">
+        
+                <input 
+                    type="hidden"
+                    name="_next"
+                    value="https://sebastiansusniak-3d.github.io/UbezpieczeniaBuszko/kontakt.html">
+        
+                <button type="submit" class="cta-button large">
+                    Wyślij wiadomość
+                </button>
+        
             </form>
         </section>
     </main>
+    
     <section class="cta-section">  
                 <h2>Kontakt z Iwoną Buszko-Byszewską Uniqa.</h2>  
                 <a href="tel:+48534374065" class="cta-button large">Zadzwoń 534 374 065</a>  
