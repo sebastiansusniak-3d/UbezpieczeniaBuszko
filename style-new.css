@@ -90,11 +90,11 @@ body {
 .hero h1 {
     font-size: 2rem;
     color: var(--blue);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #000;
 }
 
