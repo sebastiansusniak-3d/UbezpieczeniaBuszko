@@ -117,15 +117,14 @@ body {
     background-image: url('zycie.jpg');
     background-color: #dfe5ee;
 }
-.hero-home::before,
-.hero-oferta::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255,255,255,0.45);
+.hero-dom {
+    background-image: url('dom.jpg');
+    background-color: #dfe5ee;
 }
-
-.hero-zycie::before {
+.hero-home::before,
+.hero-oferta::before,
+.hero-zycie::before,
+.hero-dom::before{
     content: "";
     position: absolute;
     inset: 0;
