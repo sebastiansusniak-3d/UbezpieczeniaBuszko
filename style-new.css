@@ -659,11 +659,9 @@ body {
 
     font-size: 1rem;
 }
-
 /* =========================================
    FORMULARZ KONTAKTOWY
    ========================================= */
-
 .contact-form-section {
     background: #dfe5ee;
 
@@ -734,19 +732,24 @@ body {
     background: white;
     box-shadow: 0 0 0 3px rgba(0,48,135,0.08);
 }
-
 .contact-form textarea {
     resize: vertical;
     min-height: 160px;
 }
-
 .contact-form button {
     margin-top: 20px;
     border: none;
     cursor: pointer;
     font-size: 1.05rem;
 }
-
+/* =========================================
+               BACK BUTTON
+   ========================================= */
+.back-button{
+    display:block;
+    width:fit-content;
+    margin:40px auto;
+}
 /* MOBILE */
 @media(max-width:768px){
 
