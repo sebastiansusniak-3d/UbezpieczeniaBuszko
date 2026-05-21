@@ -65,17 +65,12 @@ body {
 /* HERO */
 .hero {
     position: relative;
-
     display: flex;
     align-items: flex-end;
     justify-content: center;
-
     min-height: 300px;
-
     padding: 40px 20px 45px;
-
     text-align: center;
-
     background-repeat: no-repeat;
     background-position: center center;
 
@@ -148,13 +143,25 @@ body {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+.hero-medycyna {
+    background-image: url('medycyna.jpg');
+    background-color: #dfe5ee;
+
+    padding-top: 160px;
+    padding-bottom: 5px;
+}
+.hero-medycyna .hero-content {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 
 .hero-home::before,
 .hero-oferta::before,
 .hero-zycie::before,
 .hero-dom::before,
 .hero-turystyka::before,
-.hero-oc::before{
+.hero-oc::before,
+.hero-medycyna::before{
     content: "";
     position: absolute;
     inset: 0;
@@ -245,7 +252,6 @@ body {
 .timeline {
     position: relative;
     border-left: 3px solid var(--blue);
-
     margin-left: 20px;
     padding-left: 30px;
 }
@@ -261,38 +267,27 @@ body {
 
 .timeline-item::before {
     content: '';
-
     position: absolute;
-
     left: -39px;
     top: 5px;
-
     width: 15px;
     height: 15px;
-
     background: white;
-
     border: 3px solid var(--blue);
-
     border-radius: 50%;
 }
 
 .timeline-year {
     color: #d4a94d;
-
     font-size: 1.2rem;
     font-weight: 700;
-
     margin-bottom: 5px;
 }
 
 .timeline-content {
     background: white;
-
     padding: 22px;
-
     border-radius: 14px;
-
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
@@ -315,47 +310,32 @@ body {
 
 .cert-grid {
     display: grid;
-
     grid-template-columns:
         repeat(auto-fit, minmax(240px, 1fr));
-
     gap: 25px;
-
     max-width: 1000px;
-
     margin: 0 auto;
 }
 
 .cert-item {
     background: #eef3fa;
-
     padding: 30px;
-
     border-radius: 14px;
-
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-
     text-align: center;
-
     border-top: 4px solid var(--blue);
 }
 
 .cert-icon {
     width: 60px;
     height: 60px;
-
     margin: 0 auto 18px;
-
     border-radius: 50%;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-weight: 700;
-
     color: white;
-
     font-size: 1.2rem;
 }
 
@@ -381,13 +361,9 @@ body {
 
 .benefits-list li {
     background: white;
-
     border-radius: 14px;
-
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-
     padding: 18px 20px;
-
     color: #222;
 }
 
@@ -454,13 +430,9 @@ body {
 
 .policies-table {
     background: #fff;
-
     border-radius: 20px;
-
     padding: 25px;
-
     box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-
     overflow-x: auto;
 }
 
@@ -479,9 +451,7 @@ body {
 
 .policies-table td {
     padding: 18px 15px;
-
     border-bottom: 1px solid #e5e5e5;
-
     text-align: center;
 }
 
@@ -616,48 +586,34 @@ body {
 /* KONTAKT */
 .contact-grid {
     background: #dfe5ee;
-
     padding: 70px 20px;
-
     display: flex;
     flex-direction: column;
-
     gap: 40px;
 }
 
 .contact-card {
     max-width: 1000px;
     width: 100%;
-
     margin: 0 auto;
-
     background: white;
-
     border-radius: 24px;
-
     padding: 40px;
-
     box-shadow: 0 8px 25px rgba(0,0,0,0.06);
 }
 
 .contact-card h2 {
     font-size: 2rem;
     color: var(--blue);
-
     margin-bottom: 25px;
 }
 
 .contact-link {
     display: block;
-
     font-size: 1.2rem;
-
     color: #222;
-
     text-decoration: none;
-
     margin-bottom: 20px;
-
     transition: 0.3s;
 }
 
@@ -667,17 +623,15 @@ body {
 
 .contact-link strong {
     color: var(--blue);
-
     font-size: 1.5rem;
 }
 
 .agent-direct p {
     margin-top: 25px;
-
     color: #555;
-
     font-size: 1rem;
 }
+
 /* =========================================
    FORMULARZ KONTAKTOWY
    ========================================= */
@@ -689,25 +643,17 @@ body {
 
 .contact-form-section h2 {
     text-align: center;
-
     color: var(--blue);
-
     font-size: 2.2rem;
-
     margin-bottom: 40px;
 }
 
 .contact-form {
     max-width: 1000px;
-
     margin: 0 auto;
-
     background: white;
-
     padding: 45px;
-
     border-radius: 24px;
-
     box-shadow: 0 8px 25px rgba(0,0,0,0.06);
 }
 
@@ -761,6 +707,7 @@ body {
     cursor: pointer;
     font-size: 1.05rem;
 }
+
 /* =========================================
                BACK BUTTON
    ========================================= */
@@ -769,7 +716,10 @@ body {
     width:fit-content;
     margin:40px auto;
 }
-/* MOBILE */
+
+/* =========================================
+               MOBILE
+   ========================================= */
 @media(max-width:768px){
 
     /* HEADER MOBILE */
@@ -876,9 +826,9 @@ body {
     .hero-zycie,
     .hero-dom,
     .hero-turystyka,
-    .hero-oc {
+    .hero-oc,
+    .hero-medycyna {
         background-size: auto 100%;
         background-position: center bottom;
-
     }
 }
