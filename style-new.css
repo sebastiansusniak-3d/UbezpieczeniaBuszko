@@ -122,6 +122,10 @@ body {
     background-image: url('turystyka.jpg');
     background-color: #dfe5ee;
 }
+.hero-turystyka .hero-content {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 .hero-dom {
     background-image: url('dom.jpg');
     background-color: #dfe5ee;
