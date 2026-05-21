@@ -118,6 +118,10 @@ body {
     background-image: url('zycie.jpg');
     background-color: #dfe5ee;
 }
+.hero-turystyka {
+    background-image: url('turystyka.jpg');
+    background-color: #dfe5ee;
+}
 .hero-dom {
     background-image: url('dom.jpg');
     background-color: #dfe5ee;
@@ -132,7 +136,8 @@ body {
 .hero-home::before,
 .hero-oferta::before,
 .hero-zycie::before,
-.hero-dom::before{
+.hero-dom::before,
+.hero-turystyka::before{
     content: "";
     position: absolute;
     inset: 0;
@@ -144,11 +149,8 @@ body {
    ========================================= */
 .about-hero {
     background: #dfe5ee;
-
     min-height: auto;
-
     padding: 70px 20px;
-
     display: flex;
     justify-content: center;
 }
