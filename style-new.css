@@ -137,11 +137,24 @@ body {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+.hero-oc {
+    background-image: url('oc.jpg');
+    background-color: #dfe5ee;
+
+    padding-top: 160px;
+    padding-bottom: 5px;
+}
+.hero-oc .hero-content {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .hero-home::before,
 .hero-oferta::before,
 .hero-zycie::before,
 .hero-dom::before,
-.hero-turystyka::before{
+.hero-turystyka::before,
+.hero-oc::before{
     content: "";
     position: absolute;
     inset: 0;
